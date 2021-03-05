@@ -1,0 +1,32 @@
+{
+  "content": {
+    "licensee": {
+      "company": "Do not use on customer instances - Dataiku - Internal Usage only",
+      "name": "Do not use on customer instances - dmytronaboka"
+    },
+    "instanceId": "devl1-dmytronaboka",
+    "licenseKind": "DATAIKU_INTERNAL",
+    "licenseId": "-svBzwn53QPe",
+    "properties": {
+      "emittedBy": "devlicenses",
+      "emittedOn": "20200505",
+      "intercomAppId": "cebm4kxa",
+      "licenseLimitsVersion": "SAER",
+      "features.security.ldap": "true",
+      "features.security.sso": "true",
+      "features.security.multiUserSecurity": "true",
+      "features.models.rawSQLExport": "true",
+      "features.models.pmmlExport": "true",
+      "features.models.jarExport": "true",
+      "features.engines.spark": "true",
+      "features.engines.sparkMLLib": "true",
+      "features.apinode": "true",
+      "features.automationServer": "true",
+      "features.advancedScenarios": "true"
+    },
+    "expiresOn": "20200930"
+  },
+  "r1Sig": "KAbavh0G/k20HtFlWiPXbKjb0dGL2G0jDlsqC4aplNfSc+V0iWT4UGSYviLH/wIuMH7t8NS2G9TG\r\nwrip1NHQDcghmiVZ0GwRamenX+1ZKIgbCN3JtPV5CPZpq9c/Oh1VCeeedavIvLT5+We8cFu0IPcm\r\n20YGpmeuSP551ugp76A\u003d\r\n",
+  "r1Pub": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCh8IHkAKPTrbowYdWRxmsKWxDdMsn8jUz/754I\r\nx2H8+jeMAZXXep0MhdWzKVlcnhpjIVurYvrMdq8jabL8+yK79pcQfupcGEnpNeJAfX9Cutpu9qIw\r\ngP/EAGKnPXb3JGyjIGxBViAiaZ41LOGbm/1ccdTOkSdfnX96VI65bpZ9TwIDAQAB\r\n",
+  "r1PubSig": "RcXHan8ND5+XfHDVfbRJU/QCd7AxanD1ZUJK3KuWxqDgbFnhnC/iKFj52LthtFTOBaX/TtesWkPw\r\ni/dh47WTA6XCCZ6BQQNyczswxIc8D0TtfeKDFKTaRe4m1bIe1FFzPitjEiXgwE1KbSyG6RR2hL/g\r\nK2LyXvmg7FzrNeqdGck\u003d\r\n"
+}
