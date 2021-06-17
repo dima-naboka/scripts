@@ -1,4 +1,3 @@
-#https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/dima-test?tab=code
 import boto3
 import logging
 from botocore.exceptions import ClientError
@@ -42,5 +41,13 @@ def get_long_running_clusters(emr_hours, emr_cluster_name, emr_client):
 def lambda_handler(event, context):
     emr_client = boto3.client('emr')
     
-    clusters = get_long_running_clusters(0,'DSS cluster id=emr_with_s3 name=emr_with_s3', emr_client)
-    terminate_clusters(clusters, emr_client)
+    dss_cluster_ids = ['emr_with_s3','emr_hive_dima','njm-emr']
+    nrmlz_inst_hrs = 48
+    
+    clusters = [get_long_running_clusters(nrmlz_inst_hrs,'DSS cluster id={} name={}'.format(dss_cluster_id,dss_cluster_id), emr_client) for dss_cluster_id in dss_cluster_ids]
+    for cl in clusters:
+        terminate_clusters(cl, emr_client)  
+    
+    # clusters = get_long_running_clusters(48,'DSS cluster id=emr_with_s3 name=emr_with_s3', emr_client)
+    # terminate_clusters(clusters, emr_client)
+    
