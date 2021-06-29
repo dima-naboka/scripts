@@ -38,11 +38,11 @@ eng_connection_def = {
  'allowManagedDatasets': True,
  'allowManagedFolders': True,
  'allowWrite': True,
- 'allowedGroups': ['engineers'],
+ 'allowedGroups': ['eng'],
  'credentialsMode': 'GLOBAL',
  'customBasicConnectionCredentialProviderParams': [],
  'customFields': {},
- 'detailsReadability': {'allowedGroups': ['engineers'],
+ 'detailsReadability': {'allowedGroups': ['eng'],
   'readableBy': 'ALLOWED'},
  'indexingSettings': {'indexForeignKeys': False,
   'indexIndices': False,
@@ -98,7 +98,7 @@ datateam_connection_def = {
  'useGlobalProxy': False
 }
 
-eng_connection = client.create_connection('hdfs_engineers', type='HDFS', params=eng_params, usable_by='ALLOWED', allowed_groups=['engineers'])
+eng_connection = client.create_connection('hdfs_engineers', type='HDFS', params=eng_params, usable_by='ALLOWED', allowed_groups=['eng'])
 eng_connection.set_definition(eng_connection_def)
 datateam_connection = client.create_connection('hdfs_data_team', type='HDFS', params=datateam_params, usable_by='ALLOWED', allowed_groups=['data_team'])
 datateam_connection.set_definition(datateam_connection_def)
