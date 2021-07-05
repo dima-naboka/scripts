@@ -1,7 +1,7 @@
 import dataiku
 import json
 #set_remote_dss() is required for scipting i.e. run from shell
-dataiku.set_remote_dss("http://localhost:12000/", "T3N4PB79T7IB7KEMQYSCMTZPAH5YX210")
+dataiku.set_remote_dss("http://localhost:12000/", "key_placeholder")
 client = dataiku.api_client()
 
 eng_params = {
